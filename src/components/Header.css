@@ -1,0 +1,16 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 0px 15px 0px 15px;
+}
+.logo{
+    width: 5rem !important;
+    height: 5rem !important;
+}
+.barraDePesquisa{
+    height: 2rem;
+    width: 15rem;
+    border-radius: 5%;
+}
