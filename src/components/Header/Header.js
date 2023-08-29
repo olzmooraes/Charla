@@ -1,10 +1,9 @@
-import logo from "../logo.png"
-import "../components/Header.css"
+import "./Header.css"
 
 function Header(){
     return (
         <header className="header">
-            <img className="logo" src={logo} alt="logo"/>
+            <img className="logo" src="./logo.png" alt="logo"/>
             <input className="barraDePesquisa" placeholder="Pesquise aqui" />
         </header>
     )

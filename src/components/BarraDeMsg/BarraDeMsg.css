@@ -1,0 +1,20 @@
+*{
+    margin:0px;
+    padding: 0px;;
+}
+.sectionBarraMsg{
+    display: flex;
+    justify-content: space-around;
+    width: 100% !important;
+    height: 2rem !important;
+}
+
+.inputNome{
+    width:30% !important;
+}
+.inputTexto{
+    width: 60% !important;
+}
+.btnEnviar{
+    width: 10% !important;
+}

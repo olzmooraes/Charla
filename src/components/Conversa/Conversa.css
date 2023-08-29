@@ -1,0 +1,7 @@
+.sectionConversa{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    width: 140% !important;
+    background-color: red;
+}
