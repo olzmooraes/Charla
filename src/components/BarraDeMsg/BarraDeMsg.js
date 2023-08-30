@@ -9,7 +9,7 @@ function BarraDeMsg() {
         <section className="sectionBarraMsg">
             <input className="inputNome" type="text"/>
             <input className="inputTexto" type="text"/>
-            <button className='btnEnviar' onClick={fazerMensagem(document.querySelector(".inputNome").value, document.querySelector(".inputTexto").value)}>Enviar</button>
+            <button className='btnEnviar' >Enviar</button>
         </section>
     )
 }

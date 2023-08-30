@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.balaoMensagemOposta{
+    background-color:#e4e3e3; 
+    position:relative; 
+    width:50%; 
+    float:left;
+    border: #000 solid 0.11rem;
+    border-radius: 1rem;
+    margin: 0.5rem;
+}
+.titulo{
+    color:red;
+    padding: 0.5rem !important;
+}
+.texto{
+    padding: 0.5rem !important;
+}
