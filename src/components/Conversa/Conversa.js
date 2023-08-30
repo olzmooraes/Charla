@@ -1,10 +1,10 @@
 import './Conversa.css';
-import BarraDeMsg from '../BarraDeMsg/BarraDeMsg';
+import Mensagem from '../mensagem/Mensagem'
 
 function Conversa(){
     return (
-        <section className="sectionConversa">
-            <BarraDeMsg/>
+        <section className="sectionConversa" id="conversa">
+            <Mensagem/>
         </section>
     )
 }
