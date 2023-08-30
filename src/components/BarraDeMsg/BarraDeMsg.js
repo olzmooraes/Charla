@@ -1,15 +1,15 @@
 import './BarraDeMsg.css'
-//import Mensagem from '../mensagem/Mensagem'
+import { useState } from 'react'
 
-function fazerMensagem(nome,mensagem){
-    alert(nome, mensagem)
-}
-function BarraDeMsg() {
+
+function BarraDeMsg(props) {
+    const [nome,setNome] = useState()
+    const [mensagem,setMensagem] = useState()
     return (
         <section className="sectionBarraMsg">
-            <input className="inputNome" type="text"/>
-            <input className="inputTexto" type="text"/>
-            <button className='btnEnviar' >Enviar</button>
+            <input className="inputNome" onChange={setNome()} type="text"/>
+            <input className="inputTexto" onChange={setMensagem()} type="text"/>
+            <button onClick={props.event(nome,mensagem)} className='btnEnviar' >Enviar</button>
         </section>
     )
 }

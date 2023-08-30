@@ -1,14 +1,12 @@
 import './Conversa.css';
 import Mensagem from '../mensagem/Mensagem'
 import MensagemOposta from '../mensagem/MensagemOposta'
-import conversa from '../../Conversas/Luiz'
-const charla = conversa
 
-function Conversa() {
+function Conversa(props) {
   return (
     <section className="sectionConversa" id="conversa">
       {
-        charla.map((elemento) => {
+        props.mensagens.map((elemento) => {
           if (elemento.nome === "Eu" || elemento.nome === "")
             return (
               <Mensagem nome="Eu" mensagem={elemento.texto} />
