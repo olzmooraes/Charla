@@ -1,9 +1,13 @@
+*{
+    margin:0px;
+    padding: 0px;;
+}
+
 main{
     display:flex;
     justify-content: center;
-    height: 90vh !important;
+    height: 80% !important;
 }
 .sectionCharla{
-    display:block;
-    width: 140% !important;
+    width: 100% !important;
 }

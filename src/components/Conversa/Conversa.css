@@ -1,3 +1,7 @@
 .sectionConversa{
-    height: 84.9vh !important;
+    position:  relative !important;
+    right: 0 !important;
+    height: 93% !important;
+    width: 100% !important;
+    background-color: brown;
 }

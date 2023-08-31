@@ -16,7 +16,7 @@ function Main() {
         setMensagens(novasMensagens);
     }
     return (
-        <main>
+        <main className="main">
             <Contatos />
             <section className="sectionCharla">
                 <Conversa msg={mensagens}/>

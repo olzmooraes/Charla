@@ -1,4 +1,6 @@
 .sectionContatos{
-    width: 60% !important;
     background-color: blue;
+    position: relative !important;
+    left: 0 !important;
+    width: 30% !important;
 }

@@ -4,10 +4,10 @@ import './App.css';
 
 function App() {
   return (
-    <>
-      <Header/>
-      <Main/>
-    </>
+    <section className="sectionApp">
+      <Header className="Header"/>
+      <Main className="Main"/>
+    </section>
   );
 }
 

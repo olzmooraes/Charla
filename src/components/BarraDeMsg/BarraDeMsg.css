@@ -4,17 +4,5 @@
 }
 .sectionBarraMsg{
     display: flex;
-    justify-content: space-around;
-    width: 100% !important;
-    height: 2rem !important;
-}
-
-.inputNome{
-    width:30% !important;
-}
-.inputTexto{
-    width: 60% !important;
-}
-.btnEnviar{
-    width: 10% !important;
+    justify-content: space-between;
 }

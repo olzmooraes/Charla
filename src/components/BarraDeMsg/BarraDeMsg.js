@@ -17,7 +17,7 @@ function BarraDeMsg(props) {
     return (
         <section className="sectionBarraMsg">
             <input className="inputNome" onChange={valorInputNome} type="text"/>
-            <input className="inputTexto" onChange={valorInputMensagem} type="text"/>
+            <input className="inputMensagem" onChange={valorInputMensagem} type="text"/>
             <button onClick={enviarMsg} className='btnEnviar'>Enviar</button>
         </section>
     )
