@@ -4,24 +4,21 @@ import Mensagem from '../mensagem/Mensagem'
 import MensagemOposta from '../mensagem/MensagemOposta'
 
 function Conversa(props) {
-  const message = props.msg
+
   return (
     <section className="sectionConversa" id="conversa">
       {
-        useEffect((message)=>{
-          console.log("erro")
-          message.map((elemento) => {
-            if (elemento.nome === "Eu" || elemento.nome === "")
+          props.msg.map((elemento) => {
+            if (elemento.nome.toLowerCase() === "eu" || elemento.nome === ""){
               return (
                 <Mensagem nome="Eu" mensagem={elemento.mensagem} />
-              )
-            else
+              )}
+            else{
               return (
                 <MensagemOposta nome={elemento.nome} mensagem={elemento.mensagem}/>
               )
+            }
           })
-        },[message])
-        
       }
     </section>
   )

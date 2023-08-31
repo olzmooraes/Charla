@@ -8,11 +8,11 @@ import './Main.css';
 function Main() {
     const [mensagens, setMensagens] = useState([])
     const buscarMensagem = (name, message) => {
-        const balaoMensagem = [{
+        const balaoMensagem = {
                 nome: name,
                 mensagem: message
-            }]
-        const novasMensagens = [...mensagens, ...balaoMensagem]
+            }
+        const novasMensagens = [...mensagens,balaoMensagem]
         setMensagens(novasMensagens);
     }
     return (

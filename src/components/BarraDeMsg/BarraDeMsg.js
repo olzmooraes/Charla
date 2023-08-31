@@ -6,11 +6,19 @@ import './BarraDeMsg.css'
 function BarraDeMsg(props) {
     const [nome,setNome] = useState("")
     const [mensagem,setMensagem] = useState("")
+    const valorInputNome = (e)=>{setNome(e.target.value)}
+    const valorInputMensagem = (e)=>{setMensagem(e.target.value)}
+    const enviarMsg = ()=>{
+        props.event(nome,mensagem)
+        setMensagem("")
+        setNome("")
+    }
+
     return (
         <section className="sectionBarraMsg">
-            <input className="inputNome" onChange={(e)=>{setNome(e.target.value)}} type="text"/>
-            <input className="inputTexto" onChange={(e)=>{setMensagem(e.target.value)}} type="text"/>
-            <button onClick={props.event(nome,mensagem)} className='btnEnviar'>Enviar</button>
+            <input className="inputNome" onChange={valorInputNome} type="text"/>
+            <input className="inputTexto" onChange={valorInputMensagem} type="text"/>
+            <button onClick={enviarMsg} className='btnEnviar'>Enviar</button>
         </section>
     )
 }
