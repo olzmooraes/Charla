@@ -2,20 +2,40 @@
     margin: 0px;
     padding: 0px;
 }
-
 .balaoMensagem{
-    background-color:#e4e3e3; 
-    position:relative; 
-    width:50%; 
-    float:right;
-    border: #000 solid 0.11rem;
-    border-radius: 1rem;
+    width: 50%;
+    float:right !important;
+    max-width: 50%;
+    background-color:#53332c; 
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
     margin: 0.5rem;
 }
-.titulo{
-    color:red;
-    padding: 0.5rem !important;
-}
 .texto{
-    padding: 0.5rem !important;
+    padding: 0.6rem !important;
+    word-wrap:break-word;
+    color: white;
+}
+
+.balaoMensagemOposto{
+    max-width: 50%;
+    width: 50%;
+    float:left !important;
+    background-color:#27140c; 
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    margin: 0.5rem;
+}
+.tituloOposto{
+    color:#bf8d39;
+    padding: 0.2rem 0 0 0.6rem !important;
+    word-wrap:break-word;
+}
+.textoOposto{
+    padding: 0.6rem !important;
+    word-wrap:break-word;
+    text-align:end;
+    color:white;
 }

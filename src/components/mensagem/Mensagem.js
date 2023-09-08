@@ -1,10 +1,8 @@
 import './Mensagem.css'
 
-function Mensagem(props){
+function Mensagem(props) {
     return (
-        <section className="balaoMensagem">
-            <p className="titulo">{props.nome}</p>
-            <hr/>
+        <section className='balaoMensagem'>
             <p className="texto">{props.mensagem}</p>
         </section>
     )

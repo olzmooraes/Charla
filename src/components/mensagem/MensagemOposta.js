@@ -1,11 +1,10 @@
-import './MensagemOposta.css'
+import './Mensagem.css'
 
-function MensagemOposta(props){
+function MensagemOposta(props) {
     return (
-        <section className="balaoMensagemOposta">
-            <p className="titulo">{props.nome}</p>
-            <hr/>
-            <p className="texto">{props.mensagem}</p>
+        <section className="balaoMensagemOposto">
+            <h5 className="tituloOposto">{props.nome}</h5>
+            <p className="textoOposto">{props.mensagem}</p>
         </section>
     )
 }

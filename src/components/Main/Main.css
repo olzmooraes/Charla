@@ -6,8 +6,12 @@
 main{
     display:flex;
     justify-content: center;
-    height: 80% !important;
+    height: 88vh !important;
+    width: 100vw !important;
 }
 .sectionCharla{
-    width: 100% !important;
+    display:flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 70vw !important;
 }

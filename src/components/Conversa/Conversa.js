@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react';
+import React from 'react';
 import './Conversa.css';
 import Mensagem from '../mensagem/Mensagem'
 import MensagemOposta from '../mensagem/MensagemOposta'
@@ -11,7 +11,7 @@ function Conversa(props) {
           props.msg.map((elemento) => {
             if (elemento.nome.toLowerCase() === "eu" || elemento.nome === ""){
               return (
-                <Mensagem nome="Eu" mensagem={elemento.mensagem} />
+                <Mensagem mensagem={elemento.mensagem} />
               )}
             else{
               return (

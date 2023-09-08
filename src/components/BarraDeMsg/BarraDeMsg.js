@@ -3,22 +3,29 @@ import { useState } from 'react'
 import './BarraDeMsg.css'
 
 
+
 function BarraDeMsg(props) {
     const [nome,setNome] = useState("")
     const [mensagem,setMensagem] = useState("")
     const valorInputNome = (e)=>{setNome(e.target.value)}
     const valorInputMensagem = (e)=>{setMensagem(e.target.value)}
     const enviarMsg = ()=>{
-        props.event(nome,mensagem)
-        setMensagem("")
-        setNome("")
+        if(mensagem != ""){
+            props.event(nome,mensagem)
+            setMensagem("")
+            setNome("")
+            document.querySelector(".inputNome").value = ''
+            document.querySelector(".inputMensagem").value = ''
+        }else{
+            alert("Adicione uma Mensagem!")
+        }
     }
 
     return (
         <section className="sectionBarraMsg">
-            <input className="inputNome" onChange={valorInputNome} type="text"/>
-            <input className="inputMensagem" onChange={valorInputMensagem} type="text"/>
-            <button onClick={enviarMsg} className='btnEnviar'>Enviar</button>
+            <input className="inputNome" onChange={valorInputNome} placeholder='Nome' type="text"/>
+            <input className="inputMensagem" onChange={valorInputMensagem} placeholder="Digite Aqui" type="text"/>
+            <button className='btnEnviar' onClick={enviarMsg}>CL</button>
         </section>
     )
 }

@@ -1,8 +1,36 @@
 *{
     margin:0px;
-    padding: 0px;;
+    padding: 0px;
 }
 .sectionBarraMsg{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    height: 6.5vh;
+    background-color: #34140e;
+}
+.sectionBarraMsg > input, button{
+    margin: 5px 0;
+    border-radius: 7px;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+
+}
+.inputNome{
+    width: 15%;
+    margin-right: 5px !important;
+    padding-left: 10px;
+}
+.inputMensagem{
+    width: 70%;
+    padding-left: 10px;
+}
+.btnEnviar{
+    width: 6%;
+    border-radius: 50px  !important;
+    text-align: center;
+    font-size: larger;
+    background-color: #bf8d39;
+    border: 3px solid #bf8d39;
+    color: #34140e;
 }

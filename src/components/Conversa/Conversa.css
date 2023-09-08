@@ -1,7 +1,5 @@
 .sectionConversa{
-    position:  relative !important;
-    right: 0 !important;
-    height: 93% !important;
+    height: 100% !important;
     width: 100% !important;
-    background-color: brown;
+    background-color: #f1e0c5 !important;
 }
