@@ -2,13 +2,14 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #34140e;
+    background-color: #040404;
     padding: 0px 15px 0px 15px;
-    height: 12vh !important;
+    height: 6vh !important;
 }
 .logo{
-    width: 5rem !important;
-    height: 4rem !important;
+    width: 4.5rem !important;
+    height: 3.5rem !important;
+    margin: 10px 0px !important;
  }
 
 /* 

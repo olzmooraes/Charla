@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
     height: 6.5vh;
-    background-color: #34140e;
+    background-color: #040404;
 }
 .sectionBarraMsg > input, button{
     margin: 5px 0;
@@ -14,7 +14,7 @@
     box-shadow: 0 0 0 0;
     border: 0 none;
     outline: 0;
-
+    background-color: #f4f7f5;
 }
 .inputNome{
     width: 15%;
@@ -25,12 +25,13 @@
     width: 70%;
     padding-left: 10px;
 }
-.btnEnviar{
+.btnEnviar, .favIcon{
     width: 6%;
-    border-radius: 50px  !important;
-    text-align: center;
-    font-size: larger;
-    background-color: #bf8d39;
-    border: 3px solid #bf8d39;
-    color: #34140e;
+    font-size: 100%;
+    background-color: transparent !important;
+}
+.favIcon{
+    color: #bf8d39;
+    width: 100%;
+    height: 100%;
 }

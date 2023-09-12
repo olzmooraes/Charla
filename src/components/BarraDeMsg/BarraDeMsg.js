@@ -1,5 +1,7 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { useState } from 'react'
+import { faArrowAltCircleRight } from '@fortawesome/free-regular-svg-icons'
 import './BarraDeMsg.css'
 
 
@@ -25,7 +27,8 @@ function BarraDeMsg(props) {
         <section className="sectionBarraMsg">
             <input className="inputNome" onChange={valorInputNome} placeholder='Nome' type="text"/>
             <input className="inputMensagem" onChange={valorInputMensagem} placeholder="Digite Aqui" type="text"/>
-            <button className='btnEnviar' onClick={enviarMsg}>CL</button>
+            <button className='btnEnviar' onClick={enviarMsg}><FontAwesomeIcon className="favIcon" icon={faArrowAltCircleRight}/>
+            </button>
         </section>
     )
 }

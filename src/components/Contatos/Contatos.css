@@ -1,12 +1,12 @@
 .sectionContatos{
-    background-color: #27140c;
+    background-color: #131313;
     width: 30vw !important;
 }
 .btnContatos{
     width: 100% !important;
     height: 4vh;
     border-radius: 0px !important;
-    background-color: #27140c;
+    background-color: transparent !important;
     color: #bf8d39;
     border-bottom: 1px solid #fff;
 }
