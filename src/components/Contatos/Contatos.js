@@ -1,11 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react';
 import './Contatos.css'
-
-function Contatos(){
+function Contatos() {
     return (
-        <section className="sectionContatos">
-            <button className="btnContatos" >Adicionar Contatos</button>
-        </section>
+            <section className="sectionContatos">
+                <button className="btnContatos" >Adicionar Contatos</button>
+            </section>
     )
 }
 

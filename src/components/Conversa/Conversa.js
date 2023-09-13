@@ -4,20 +4,27 @@ import Mensagem from '../mensagem/Mensagem'
 import MensagemOposta from '../mensagem/MensagemOposta'
 
 function Conversa(props) {
+  // const ref = React(null);
+  // ref.current?.scrollIntoView({ behavior: 'smooth', block: 'end'});
   return (
     <section className="sectionConversa" id="conversa">
       {
-          props.msg.map((elemento,indice) => {
-            if (elemento.nome.toLowerCase() === "eu" || elemento.nome === ""){
-              return (
-                <Mensagem mensagem={elemento.mensagem} index={indice} excluirMensagem={props.excluirMensagem}/>
-              )}
-            else{
-              return (
-                <MensagemOposta nome={elemento.nome} mensagem={elemento.mensagem} index={indice} eventMensagem={props.excluirMensagem}/>
-              )
-            }
-          })
+        props.msg.map((elemento, indice) => {
+          if (elemento.nome.toLowerCase() === "eu" || elemento.nome === "") {
+            return (
+              <section className="sectionDaMensagemNaconversa">
+                <Mensagem mensagem={elemento.mensagem.toUpperCase()} index={indice} excluirMensagem={props.excluirMensagem} />
+              </section>
+            )
+          }
+          else {
+            return (
+              <section className='sectionDaMensagemNaconversa'>
+                <MensagemOposta nome={ elemento.nome.toUpperCase()} mensagem={elemento.mensagem.toUpperCase()} index={indice} eventMensagem={props.excluirMensagem} />
+              </section>
+            )
+          }
+        })
       }
     </section>
   )

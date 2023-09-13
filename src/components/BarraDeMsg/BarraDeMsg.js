@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { useState } from 'react'
-import { faArrowAltCircleRight } from '@fortawesome/free-regular-svg-icons'
+import { faLocationArrow } from '@fortawesome/free-solid-svg-icons'
 import './BarraDeMsg.css'
 
 function BarraDeMsg(props) {
@@ -9,11 +9,6 @@ function BarraDeMsg(props) {
     const [mensagem, setMensagem] = useState("")
     const valorInputNome = (e) => { setNome(e.target.value) }
     const valorInputMensagem = (e) => { setMensagem(e.target.value) }
-    const handleKeyPress = (event) => {
-        if (event.key === 'Enter') {
-            enviarMsg();
-        }
-    }
     const enviarMsg = () => {
         if (mensagem != "") {
             props.eventoBuscaMensagem(nome, mensagem)
@@ -25,13 +20,19 @@ function BarraDeMsg(props) {
             alert("Adicione uma Mensagem!")
         }
     }
+    const handleKeyDown = (event) => {
+        if (event.key === 'Enter') {
+            enviarMsg();
+        }
+    }
 
     return (
         <section className="sectionBarraMsg">
-            <input className="inputNome" onChange={valorInputNome} placeholder='Nome' type="text" />
-            <input className="inputMensagem" onChange={valorInputMensagem} placeholder="Digite Aqui" type="text" />
-            <button className='btnEnviar' onKeyPress={(e) => { handleKeyPress(e) }} onClick={enviarMsg}><FontAwesomeIcon className="favIcon" icon={faArrowAltCircleRight} />
+            <input className="inputNome" onKeyDown={handleKeyDown} onChange={valorInputNome} placeholder='Nome' type="text" />
+            <input className="inputMensagem" onKeyDown={handleKeyDown} onChange={valorInputMensagem} placeholder="Digite Aqui" type="text" />
+            <button className='btnEnviar' onClick={enviarMsg}><FontAwesomeIcon className="favIcon" icon={faLocationArrow} />
             </button>
+           
         </section>
     )
 }

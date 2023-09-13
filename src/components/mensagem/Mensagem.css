@@ -3,9 +3,9 @@
     padding: 0px;
 }
 .balaoMensagem{
-    width: 50%;
+    min-width: 4%;
     float:right !important;
-    max-width: 50%;
+    max-width: 40%;
     background-color:#747474; 
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
@@ -19,8 +19,8 @@
 }
 
 .balaoMensagemOposto{
-    max-width: 50%;
-    width: 50%;
+    min-width: 4%;
+    max-width: 40%;
     float:left !important;
     background-color:#131313; 
     border-top-left-radius: 1rem;
@@ -32,6 +32,7 @@
     color:#bf8d39;
     padding: 0.2rem 0 0 0.6rem !important;
     word-wrap:break-word;
+    margin-right: 0.5rem !important;
 }
 .textoOposto{
     padding: 0.6rem !important;
