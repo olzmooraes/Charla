@@ -6,7 +6,8 @@
     display: flex;
     justify-content: center;
     height: 6.5vh;
-    background-color: #040404;
+    background-color: #272727;
+    background-image: url("../../../public/fundoWhattsApp.png");
 }
 .sectionBarraMsg > input, button{
     margin: 5px 0;

@@ -1,5 +1,8 @@
 .sectionConversa{
     height: 100% !important;
     width: 100% !important;
-    background-color: #f4f7f5;
+    background-color: #272727;
+    background-image: url("../../../public/fundoWhattsApp.png");
+    background-size: contain;
+    overflow: auto;
 }

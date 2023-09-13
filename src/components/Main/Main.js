@@ -15,12 +15,17 @@ function Main() {
         const novasMensagens = [...mensagens,balaoMensagem]
         setMensagens(novasMensagens);
     }
+    const excluirMensagem = (indice)=>{
+        const novasMensagens = mensagens.filter((_, index) => index !== indice);
+        setMensagens(novasMensagens);
+        alert(` indice : ${indice}`);
+    }
     return (
         <main className="main">
             <Contatos />
             <section className="sectionCharla">
-                <Conversa msg={mensagens}/>
-                <BarraDeMsg event={buscarMensagem}/>
+                <Conversa excluirMensagem={excluirMensagem} msg={mensagens}/>
+                <BarraDeMsg eventoBuscaMensagem={buscarMensagem}/>
             </section>
         </main>
     )
