@@ -5,7 +5,7 @@ function Mensagem(props) {
         props.excluirMensagem(props.index)
         }
     return (
-        <section onClick={excluirMsg} className='balaoMensagem'>
+        <section onDoubleClick={excluirMsg} className='balaoMensagem'>
             <p className="texto">{props.mensagem}</p>
         </section>
     )

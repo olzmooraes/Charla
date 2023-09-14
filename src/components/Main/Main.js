@@ -18,7 +18,6 @@ function Main() {
     const excluirMensagem = (indice)=>{
         const novasMensagens = mensagens.filter((_, index) => index !== indice);
         setMensagens(novasMensagens);
-        alert(` indice : ${indice}`);
     }
     return (
         <main className="main">

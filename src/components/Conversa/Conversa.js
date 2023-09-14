@@ -4,8 +4,6 @@ import Mensagem from '../mensagem/Mensagem'
 import MensagemOposta from '../mensagem/MensagemOposta'
 
 function Conversa(props) {
-  // const ref = React(null);
-  // ref.current?.scrollIntoView({ behavior: 'smooth', block: 'end'});
   return (
     <section className="sectionConversa" id="conversa">
       {
