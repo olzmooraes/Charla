@@ -33,11 +33,8 @@ const TextoMensagem = styled.p`
 `
 
 function MensagemOposta(props) {
-    const excluirMsg = ()=>{
-        props.excluirMensagem(props.index)
-        }
     return (
-        <SectionMensagem ondblclick={excluirMsg}>
+        <SectionMensagem>
             <Nomeontato >{props.nome}</Nomeontato>
             <TextoMensagem>{props.mensagem}</TextoMensagem>
             <HoraMensagem>{props.time}</HoraMensagem>

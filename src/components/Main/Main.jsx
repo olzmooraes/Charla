@@ -16,10 +16,7 @@ const SectionAbaConversa = styled.section`
     display:flex;
     flex-direction: column;
     justify-content: end;
-    width: 70vw !important;
-    @media (min-width: 319px){
-        width: 100vw !important;
-    }
+    width: 100vw !important;
 `
 
 function Main() {

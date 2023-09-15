@@ -29,7 +29,7 @@ function Conversa(props) {
           else {
             return (
               <section className='sectionDaMensagemNaconversa'>
-                <MensagemOposta nome={ elemento.nome.toUpperCase()} mensagem={elemento.mensagem.toUpperCase()} index={indice} eventMensagem={props.excluirMensagem} time={elemento.time}/>
+                <MensagemOposta nome={ elemento.nome.toUpperCase()} mensagem={elemento.mensagem.toUpperCase()} eventMensagem={props.excluirMensagem} time={elemento.time}/>
               </section>
             )
           }

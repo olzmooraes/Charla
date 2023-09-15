@@ -40,7 +40,6 @@ const Enviar = styled.button`
     box-shadow: 0 0 0 0;
     border: 0 none;
     outline: 0;
-    background-color: #f4f7f5;
     width: 6%;
     font-size: 100%;
     background-color: transparent !important;
