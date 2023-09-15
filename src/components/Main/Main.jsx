@@ -1,16 +1,34 @@
 import React from 'react';
 import { useState } from 'react';
 import BarraDeMsg from '../BarraDeMsg/BarraDeMsg';
-import Contatos from '../Contatos/Contatos';
+import AbaContatos from '../Contatos/abaContatos';
 import Conversa from '../Conversa/Conversa';
 import './Main.css';
+import { styled } from 'styled-components';
+
+const MainApp = styled.main`
+    display:flex;
+    justify-content: center;
+    height: 94vh !important;
+    width: 100vw !important;
+`
+const SectionAbaConversa = styled.section`
+    display:flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 70vw !important;
+    @media (min-width: 319px){
+        width: 100vw !important;
+    }
+`
 
 function Main() {
     const [mensagens, setMensagens] = useState([])
-    const buscarMensagem = (name, message) => {
+    const buscarMensagem = (name, message, time) => {
         const balaoMensagem = {
                 nome: name,
-                mensagem: message
+                mensagem: message,
+                time: time
             }
         const novasMensagens = [...mensagens,balaoMensagem]
         setMensagens(novasMensagens);
@@ -20,13 +38,13 @@ function Main() {
         setMensagens(novasMensagens);
     }
     return (
-        <main className="main">
-            <Contatos />
-            <section className="sectionCharla">
+        <MainApp>
+            <AbaContatos contatos={mensagens} />
+            <SectionAbaConversa>
                 <Conversa excluirMensagem={excluirMensagem} msg={mensagens}/>
                 <BarraDeMsg eventoBuscaMensagem={buscarMensagem}/>
-            </section>
-        </main>
+            </SectionAbaConversa>
+        </MainApp>
     )
 }
 

@@ -1,36 +1,4 @@
-*{
-    margin:0px;
-    padding: 0px;
-}
-.sectionBarraMsg{
-    display: flex;
-    justify-content: center;
-    height: 6.5vh;
-    background-color: #403f3f;
-    background-image: url("../../../public/fundoWhattsApp.png");
-}
-.sectionBarraMsg > input, button{
-    margin: 5px 0;
-    border-radius: 7px;
-    box-shadow: 0 0 0 0;
-    border: 0 none;
-    outline: 0;
-    background-color: #f4f7f5;
-}
-.inputNome{
-    width: 15%;
-    margin-right: 5px !important;
-    padding-left: 10px;
-}
-.inputMensagem{
-    width: 70%;
-    padding-left: 10px;
-}
-.btnEnviar, .favIcon{
-    width: 6%;
-    font-size: 100%;
-    background-color: transparent !important;
-}
+
 .favIcon{
     color: #bf8d39;
     width: 100%;
