@@ -39,7 +39,7 @@ Charla é um aplicativo de mensagens que permite aos usuários trocar mensagens 
     
 ## Exemplo de Interface
 
-[Uploading screen-capture (1).webm…]()
+[Demonstração](https://github.com/olzmooraes/Charla/assets/111381271/284530e7-04d6-4d07-affd-a80829d2c697)
 
 ## Autor
 
