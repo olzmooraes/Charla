@@ -1,8 +1,8 @@
-<img src="LogoGrande.png" align="center"/>
+![Charla](https://github.com/olzmooraes/Charla/assets/111381271/1e82c08e-ee1b-4f8e-b916-94f3f5d16188)
 
 # Charla - Aplicativo de Mensagens
 
-Charla é um aplicativo de mensagens que permite aos usuários trocar mensagens de forma simples e intuitiva. O nome "Charla" significa "bater papo" em espanhol, e é exatamente o que você pode fazer aqui - conversar com seus amigos e familiares.
+Charla é um aplicativo de mensagens que permite aos usuários trocar mensagens de forma simples e intuitiva. O nome "Charla" significa "bater papo" em espanhol, e é exatamente o que você vai fazer aqui um dia - conversar com seus amigos e familiares.
 
 ## Funcionalidades
 
@@ -35,20 +35,16 @@ Charla é um aplicativo de mensagens que permite aos usuários trocar mensagens 
 3. Clique no botão "Enviar" ou pressione a tecla "Enter" para enviar a mensagem.
 4. Observe como as mensagens são exibidas no canto direito ou esquerdo, dependendo da validação.
 
-*. Se não tiver o git bash instalado segue o link do git para instalação:
-    https://git-scm.com/downloads
+*. Se não tiver o git bash instalado segue o link do [git](https://git-scm.com/downloads).
+    
 ## Exemplo de Interface
 
-[Inserir imagem ou link para uma captura de tela aqui]
-
-## Contribuições
-
-Contribuições são bem-vindas! Sinta-se à vontade para fazer um fork deste projeto, implementar melhorias e enviar um pull request.
+[Uploading screen-capture (1).webm…]()
 
 ## Autor
 
-Este projeto foi desenvolvido por [Seu Nome].
+Este projeto foi desenvolvido por Luiz Otávio Moraes da Cruz.
 
 ---
 
-Esperamos que você aproveite o Charla para bater papo com seus amigos e familiares. Divirta-se!
+Esperamos que você aproveite o Charla para bater papo com seus amigos e familiares em breve!
