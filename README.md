@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+<img src="LogoGrande.png" align="center"/>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Charla - Aplicativo de Mensagens
 
-## Available Scripts
+Charla é um aplicativo de mensagens que permite aos usuários trocar mensagens de forma simples e intuitiva. O nome "Charla" significa "bater papo" em espanhol, e é exatamente o que você pode fazer aqui - conversar com seus amigos e familiares.
 
-In the project directory, you can run:
+## Funcionalidades
 
-### `npm start`
+- **Mensagens de Texto:** Charla permite que você envie mensagens de texto para seus contatos.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Validação Inteligente:** O aplicativo faz uma validação simples para determinar como a mensagem será exibida:
+  - Se o campo de nome estiver vazio ou se a palavra "Eu" for digitada, a mensagem aparecerá do lado direito.
+  - Caso contrário, a mensagem será exibida do lado esquerdo.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Contatos:** Sempre que uma mensagem é enviada por outra pessoa, um novo contato é criado na tela de contatos. Os contatos incluem:
+  - Nome do contato.
+  - Último visto, mostrando a hora em que a mensagem foi enviada.
 
-### `npm test`
+## Layout Responsivo
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Header Simples:** O header do Charla é minimalista e contém apenas a logo do site.
 
-### `npm run build`
+- **Navegação Mobile:** No modo mobile, um ícone de hambúrguer é exibido no canto superior esquerdo para acessar a lista de contatos.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tecnologias Utilizadas
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- React.js foi usado para criar a interface do Charla.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Como Usar
+1. Clique no botão `<> Code`
+2. Copie a url do projeto
+3. Abra o git bash* no lugar aonde você quer que o projeto seja clonado
+1. Abra o Charla em seu navegador.
+2. Insira o nome da pessoa e a mensagem nos campos apropriados.
+3. Clique no botão "Enviar" ou pressione a tecla "Enter" para enviar a mensagem.
+4. Observe como as mensagens são exibidas no canto direito ou esquerdo, dependendo da validação.
 
-### `npm run eject`
+*. Se não tiver o git bash instalado segue o link do git para instalação:
+    https://git-scm.com/downloads
+## Exemplo de Interface
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+[Inserir imagem ou link para uma captura de tela aqui]
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contribuições
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Contribuições são bem-vindas! Sinta-se à vontade para fazer um fork deste projeto, implementar melhorias e enviar um pull request.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Autor
 
-## Learn More
+Este projeto foi desenvolvido por [Seu Nome].
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Esperamos que você aproveite o Charla para bater papo com seus amigos e familiares. Divirta-se!
