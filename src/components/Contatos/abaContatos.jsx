@@ -31,9 +31,11 @@ function Contatos(props) {
             <SectionAbaContatos>
                 <AddContato>Adicionar Contatos</AddContato>
                 {
-                    contatosTratados.map((e)=>{
+                    contatosTratados.map((e, index)=>{
                         return (
-                            <Contato nome={e.nome} time={e.time}/>
+                            <div key={index}>
+                                <Contato nome={e.nome} time={e.time}/>
+                            </div>
                         )
                     })
                 }

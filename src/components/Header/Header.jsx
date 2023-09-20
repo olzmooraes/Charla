@@ -14,7 +14,7 @@ width: 100% !important;
 const HeaderApp = styled.header`
     display: flex;
     align-items: center;
-    height: 6vh !important;
+    height: 7vh !important;
     background-color: #040404;
     padding: 0px 15px 0px 15px;
 

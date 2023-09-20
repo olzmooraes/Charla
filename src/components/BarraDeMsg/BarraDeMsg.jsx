@@ -1,16 +1,14 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import React from 'react'
 import { useState } from 'react'
-import { faLocationArrow } from '@fortawesome/free-solid-svg-icons'
-import './BarraDeMsg.css'
 import { styled } from 'styled-components'
+
 
 const SectionInputs = styled.section`
     display: flex;
     justify-content: center;
     height: 6.5vh;
-    background-color: #403f3f;
-    background-image: url("fundoWhattsApp.png");
+    background-color: #040404;
 `
 const Nome = styled.input`
     margin: 5px 0;
@@ -46,6 +44,9 @@ const Enviar = styled.button`
     color: #bf8d39;
     border: 0 none;
 ` 
+const FavIcon = styled.i`
+    color: #bf8d39
+`
 function BarraDeMsg(props) {
     const [nome, setNome] = useState("")
     const [mensagem, setMensagem] = useState("")
@@ -78,7 +79,7 @@ function BarraDeMsg(props) {
         <SectionInputs>
             <Nome onKeyDown={handleKeyDown} onChange={valorInputNome} placeholder='Nome' className='inputNome' type="text" />
             <TextoMensagem onKeyDown={handleKeyDown} onChange={valorInputMensagem} className='inputMensagem' placeholder="Mensagem" type="text" />
-            <Enviar onClick={enviarMsg}><FontAwesomeIcon className="favIcon" icon={faLocationArrow} />
+            <Enviar onClick={enviarMsg}><i class="fa-solid fa-paper-plane fa-lg"></i>
             </Enviar>
 
         </SectionInputs>

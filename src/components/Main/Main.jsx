@@ -3,13 +3,12 @@ import { useState } from 'react';
 import BarraDeMsg from '../BarraDeMsg/BarraDeMsg';
 import AbaContatos from '../Contatos/abaContatos';
 import Conversa from '../Conversa/Conversa';
-import './Main.css';
 import { styled } from 'styled-components';
 
 const MainApp = styled.main`
     display:flex;
     justify-content: center;
-    height: 94vh !important;
+    height: 93vh !important;
     width: 100vw !important;
 `
 const SectionAbaConversa = styled.section`
