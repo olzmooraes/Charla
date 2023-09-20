@@ -22,14 +22,14 @@ function Conversa(props) {
           if (elemento.nome.toLowerCase() === "eu" || elemento.nome === "") {
             return (
               <section key={indice} className="sectionDaMensagemNaconversa">
-                <Mensagem mensagem={elemento.mensagem.toUpperCase()} index={indice} excluirMensagem={props.excluirMensagem} time={elemento.time}/>
+                <Mensagem mensagem={elemento.mensagem} index={indice} excluirMensagem={props.excluirMensagem} time={elemento.time}/>
               </section>
             )
           }
           else {
             return (
               <section key={indice} className='sectionDaMensagemNaconversa'>
-                <MensagemOposta nome={ elemento.nome.toUpperCase()} mensagem={elemento.mensagem.toUpperCase()} eventMensagem={props.excluirMensagem} time={elemento.time}/>
+                <MensagemOposta nome={ elemento.nome.toUpperCase()} mensagem={elemento.mensagem} eventMensagem={props.excluirMensagem} time={elemento.time}/>
               </section>
             )
           }

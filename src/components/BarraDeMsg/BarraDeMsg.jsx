@@ -79,7 +79,7 @@ function BarraDeMsg(props) {
         <SectionInputs>
             <Nome onKeyDown={handleKeyDown} onChange={valorInputNome} placeholder='Nome' className='inputNome' type="text" />
             <TextoMensagem onKeyDown={handleKeyDown} onChange={valorInputMensagem} className='inputMensagem' placeholder="Mensagem" type="text" />
-            <Enviar onClick={enviarMsg}><i class="fa-solid fa-paper-plane fa-lg"></i>
+            <Enviar onClick={enviarMsg}><FavIcon className="fa-solid fa-paper-plane fa-lg"></FavIcon>
             </Enviar>
 
         </SectionInputs>

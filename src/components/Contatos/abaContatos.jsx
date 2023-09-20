@@ -24,6 +24,7 @@ const SectionAbaContatos = styled.section`
 
 function Contatos(props) {
     const contatos = props.contatos
+    //eslint-disable-next-line
     const contatosTratados = contatos.filter((e)=>{
         if(e.nome !== "" && e.nome.toLowerCase() !== "eu") return e
     })
